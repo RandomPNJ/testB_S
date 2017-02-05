@@ -9,8 +9,7 @@ var router = express.Router();
 
 router.get('/', function(req, res, next){
 
-    res.sendfile('../../index.html');
-    res.sendfile('../../src/index.js');
+    res.render('index');
 
     // Go to next call
     next();
