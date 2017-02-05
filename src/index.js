@@ -1,14 +1,14 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { App } from './components/App';
-import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import App from './components/App'
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import App from './components/App';
+import commentApp from './reducers/commentReducers';
 
-let store = createStore(commentApp);
+const store = createStore(commentApp);
 
 render(
-    <Provider store={store}>
+    <Provider>
         <App />
     </Provider>,
     document.getElementById('root')

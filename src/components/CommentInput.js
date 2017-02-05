@@ -28,7 +28,7 @@ export class CommentInput extends Component {
                     </div>
                 </div>
                 <div>
-                    <Button>Save</Button>
+                    <Button onClick={this.addComment()}>Save</Button>
                 </div>
             </div>
 

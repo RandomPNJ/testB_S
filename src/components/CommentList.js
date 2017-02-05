@@ -3,7 +3,7 @@ import Comment from './Comment';
 
 export class CommentList extends Component {
     static propTypes = {
-        comments: PropTypes.array.isRequired
+        comments: PropTypes.Object.isRequired
     }
 
 

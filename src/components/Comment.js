@@ -3,7 +3,10 @@ import React, { Component, PropTypes } from 'react';
 
 export class Comment extends Component {
     static propTypes = {
-        commentText: PropTypes.object.isRequired
+        username: PropTypes.String.isRequired,
+        email: PropTypes.String,
+        commentText: PropTypes.String.isRequired,
+        date: PropTypes.Date.isRequired
     }
 
 
